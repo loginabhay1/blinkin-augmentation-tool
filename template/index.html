@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BlinkIN Img Augmentation Tool</title>
+	<style>
+
+	body {
+	  font-family: Arial;
+	  margin: 0;
+	}
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+	/* Header/Logo Title */
+	.header {
+	  padding: 10px;
+	  text-align: center;
+	  background: #99c2ff;
+	  color: white;
+	  font-size: 20px;
+	}
+
+	/* Page Content */
+	.content {padding:20px;}
+
+	.container
+	{
+	  width:350px;
+	  border:none; 
+	  overflow: hidden;
+	  text-align: center;
+	}
+	.text
+	{
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    text-align: center;
+	    font-family: Arial;
+	    display: block; 
+	}
+	.bottom-point 
+	{
+	     margin-bottom: 0.5cm;
+	}
+	.bottom-one 
+	{
+	     margin-bottom: 1cm;
+	}
+	button
+	{
+	    float: right;    
+	}
+  </style>
+</head>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+<body style="background-color:#f2f2f2;">
+	
+	<div class="header">
+		<h1>Image Augmentation</h3>
+	</div>
+
+	<p class="bottom-one"></p>
+
+	<img id="target" class="center" width="640px" height="400px" />
+	<p class="bottom-point"></p>
+	<input type="file" id="select_image" name="image" onchange="putImage()" class="center" />
+	<p class="bottom-point"></p>
+	<p id="success" class="text"></p>
+	<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+	<!-- <script type="text/javascript" src="./index.js"></script> -->
+</body>
+</html>
