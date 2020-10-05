@@ -56,4 +56,5 @@ function putImage() {
     for (var i = 0; i < src.files.length; i++) {
       showImage(src.files[i], target, len);
     }
+    count = 0;
 }
