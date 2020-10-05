@@ -34,6 +34,12 @@
 	  overflow: hidden;
 	  text-align: center;
 	}
+
+	button {
+    margin:0 auto;
+    display:block;
+	}
+
 	.text
 	{
 	    overflow: hidden;
@@ -68,7 +74,13 @@
 
 	<img id="target" class="center" width="640px" height="400px" />
 	<p class="bottom-point"></p>
-	<input type="file" id="select_image" name="image" onchange="putImage()" class="center" />
+	<input type="file" id="select_image" name="image" class="center" multiple="multiple" />
+	<div>
+		<button onclick="putImage()">
+			    Submit
+		</button>
+	</div>
+	<div id='file-list-display' class="text"></div>
 	<p class="bottom-point"></p>
 	<p id="success" class="text"></p>
 	<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>

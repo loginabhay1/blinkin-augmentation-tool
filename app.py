@@ -234,7 +234,7 @@ def Get_original_img():
 	print("[INFO] Using methods: ", used_methods)
 	img = cv2.cvtColor(raw_img, cv2.COLOR_BGR2RGB)
 	today = date.today()
-	folder_name = today.strftime("%d%m%y") + '-' + uuid.uuid4().hex[:4]
+	folder_name = today.strftime("%d%m%y")
 	folder_path = img_save_path + '/' + folder_name
 	make_folders(folder_path)
 	execute_methods(used_methods,img,folder_path)
