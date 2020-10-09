@@ -30,3 +30,5 @@
 * http://127.0.0.1:7001
 
 ### If already Installed Repeat step 2, 5 and 6.
+
+![Sample Image](sample_img.png)
