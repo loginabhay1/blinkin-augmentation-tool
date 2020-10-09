@@ -3,30 +3,28 @@
 * python 3.6.9 or above
 * Python virtual environment
 ### First time initialization step:
-```
-# 1 Create the virtual environment
+#### 1 Create the virtual environment
 
-python3 -m venv aug-venv
+* python3 -m venv aug-venv
 
-# 2 activate the virtual environment
+#### 2 activate the virtual environment
 
-source aug-venv/bin/activate
+* source aug-venv/bin/activate
 
-# 3 upgrade the packages
+#### 3 upgrade the packages
 
-pip install --upgrade pip
+* pip install --upgrade pip
 
-pip install --upgrade setuptools
+* pip install --upgrade setuptools
 
-# 4 install required packages
+#### 4 install required packages
 
-pip install -r requirements.txt
+* pip install -r requirements.txt
 
-# 5 run the application
+#### 5 run the application
 
-python app.py
+* python app.py
 
-# 6 in browser open 
+#### 6 in browser open 
 
-http://127.0.0.1:7001
-```
+* http://127.0.0.1:7001
